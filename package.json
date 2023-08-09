@@ -1,0 +1,33 @@
+{
+  "name": "cap-calculator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "server": "json-server --watch db.json --port 3004",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18",
+    "jest": "^29.6.2",
+    "nuxt": "^3.6.1",
+    "sass": "^1.63.6"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "@mdi/font": "^7.2.96",
+    "@pinia/nuxt": "^0.4.11",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.6.2",
+    "downloadjs": "^1.4.7",
+    "json-server": "^0.17.3",
+    "pinia": "^2.1.4",
+    "uuid": "^9.0.0",
+    "vuetify": "3.3.11"
+  }
+}

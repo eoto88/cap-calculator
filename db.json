@@ -1,0 +1,37 @@
+{
+  "clients": [
+    {
+      "id": "527c1a31-4c20-47e7-a6d2-7576971052de",
+      "name": "Client 1"
+    }
+  ],
+  "projects": [
+    {
+      "id": "51891ba3-009c-48ec-ba69-180b2d08548f",
+      "title": "Projet 1",
+      "clientId": "527c1a31-4c20-47e7-a6d2-7576971052de",
+      "sent": false
+    },
+    {
+      "id": "33b60e36-2363-45cc-9757-d824532c9ab7",
+      "title": "Test",
+      "clientId": "527c1a31-4c20-47e7-a6d2-7576971052de",
+      "sent": false
+    }
+  ],
+  "pieces": [
+    {
+      "id": "9e2357a9-8bb1-41f5-b852-295f12ada441",
+      "name": "Piece 1",
+      "material": "MDF 1/2",
+      "height": 12,
+      "width": 23,
+      "cuttingTime": 15,
+      "projectId": "51891ba3-009c-48ec-ba69-180b2d08548f",
+      "price": 0
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
