@@ -43,10 +43,10 @@
       <td>{{ item.sandingCost }}</td>
       <td>{{ item.paintCost }}</td>
       <td>{{ item.adjustment }}</td>
-      <td>{{ item.totalCost }}</td>
-      <td>
-        <v-btn icon size="small" @click="edit(item)" title="Edit"><v-icon>mdi-pencil</v-icon></v-btn>
-        <v-btn icon size="small" @click="del(item)" title="Delete"><v-icon>mdi-delete</v-icon></v-btn>
+      <td class="totalCost">{{ item.totalCost }}</td>
+      <td class="actions">
+        <v-btn class="edit-btn" icon size="x-small" @click="edit(item)" title="Edit"><v-icon>mdi-pencil</v-icon></v-btn>
+        <v-btn class="btn-del ml-2" icon size="x-small" @click="del(item)" title="Delete"><v-icon>mdi-delete</v-icon></v-btn>
       </td>
     </tr>
     </tbody>
@@ -71,3 +71,20 @@ const del = (piece) => {
   emit('delete', piece);
 }
 </script>
+
+<style>
+.totalCost {
+  border-left: thin solid rgba(var(--v-border-color), var(--v-border-opacity));
+  border-right: thin solid rgba(var(--v-border-color), var(--v-border-opacity));
+}
+
+.edit-btn:hover {
+  background-color: rgb(var(--v-theme-success)) !important;
+  color: white;
+}
+
+.btn-del:hover {
+  background-color: rgb(var(--v-theme-error)) !important;
+  color: white;
+}
+</style>

@@ -2,12 +2,12 @@
   <v-dialog v-model="internalValue">
     <v-card>
       <v-card-title>
-        <h2 class="h2 py-4 ml-2">Ajout/Modification d'une pièce</h2>
+        <h2 class="h2 py-6 ml-2">Ajout/Modification d'une pièce</h2>
       </v-card-title>
       <v-card-text>
         <v-row>
           <v-col cols="4">
-            <v-text-field label="Nom de la pièce" v-model="internalPiece.title"></v-text-field>
+            <v-text-field  label="Nom de la pièce" v-model="internalPiece.title"></v-text-field>
           </v-col>
           <v-col cols="8"></v-col>
         </v-row>
