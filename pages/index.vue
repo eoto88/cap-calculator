@@ -107,10 +107,9 @@ const deletePiece = (piece) => {
 const savePiece = (piece) => {
   if (piece.id === undefined) {
     piece.id = uuid.v4();
-    project.value.pieces.push(piece);
+    project.value.addPiece(piece);
   } else {
-    const index = project.value.pieces.findIndex(p => p.id === piece.id);
-    project.value.pieces[index] = piece;
+    project.value.updatePiece(piece);
   }
   pieceDialog.value = false;
 }
